@@ -20,10 +20,10 @@ $panels = 4;
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css?v="$cssVersion />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css?v="$cssVersion />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/colors.css?v="$cssVersion />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v="$cssVersion />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css?v="<?php echo ($cssVersion);?> />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css?v="<?php echo ($cssVersion);?> />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/colors.css?v="<?php echo ($cssVersion);?> />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v="<?php echo ($cssVersion);?> />
     
     <script src="js/main.js"></script>
 </head>

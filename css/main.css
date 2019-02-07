@@ -47,6 +47,7 @@ div.logoContainer > h1 {
 .logoI {
     background-color: #FFF;
     color: #00B4DB;
+    line-height: 25px;
 }
 
 header > nav {

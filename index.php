@@ -25,7 +25,7 @@ $panelStatus = [91,92,100,99];
     
     <title>ViSUM IO</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css?v=<?php echo ($cssVersion);?>" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css?v=<?php echo ($cssVersion);?>" />
@@ -71,7 +71,7 @@ $panelStatus = [91,92,100,99];
     </main>
 
     <footer>
-
+            <h3>Visum IO Monitoring Platform (c) 2019 - All Rights Reserved</h3>
     </footer>
 </body>
 </html>

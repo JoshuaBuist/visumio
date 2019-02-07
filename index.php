@@ -45,7 +45,7 @@ $panels = 4;
         <?php
             for ($i = 0; $i<5; $i++)
             {
-                echo ("<div class='panel'><div class='panelContent'></div></div>")
+                echo ("<div class='panel'><div class='panelContent'></div></div>");
             }
         ?>
 

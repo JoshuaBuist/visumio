@@ -1,0 +1,103 @@
+/*
+Author: Joshua Buist
+Luna Visum Monitoring Platform (c) 2019 - All Rights Reserved
+Licensed to iUNU Inc. 2019
+*/
+
+h1 {
+    font-family: 'Saira';
+    font-weight: 200;
+}
+
+h2,h3,h4,h5,h6,a{
+    font-family: 'IBM Plex Serif'
+}
+
+a.fas {
+    color: #00B4DB;
+    font-size: 38px;
+    line-height: 75px;
+}
+
+
+/* Element Definitions */
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 75px;
+}
+
+div.logoContainer {
+    width: 300px;
+    padding-left: 75px;
+}
+
+div.logoContainer > h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+header > nav {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Classes */
+
+.vSpace {
+    height: 85px;
+}
+
+div.container {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+div.panel {
+    display: inline-block;
+    width: 23%;
+    min-width: 200px;
+    height: 300px;
+    margin: 0.5px;
+}
+
+div.panelContent {
+    width: 100%;
+    height: 100%;
+    transition: background-color 1s;
+}
+
+div.panelContent:hover {
+    background-color: rgba(35,35,35,0.8);
+}
+
+
+
+/* TO-DO 
+- Make app responsive
+*/
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
+}

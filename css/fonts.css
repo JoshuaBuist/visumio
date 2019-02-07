@@ -1,0 +1,17 @@
+/* All external CDN fonts imported here */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Saira:200,400');
+@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+
+/*
+
+font-family: 'Saira', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+
+*/
+
+h1,h2,h3,h4,h5,h6,a,i,b,p {
+    font-family: 'Saira', sans-serif;
+    color: #FFF;
+    font-weight: 200;
+}

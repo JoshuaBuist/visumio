@@ -6,13 +6,19 @@ Visum IO Monitoring Platform (c) 2019 - All Rights Reserved
 
 <?php 
 
-$cssVersion = date("Y-m-d");
+$cssVersion = date("Y-m-d-H-i-s");
+
+//TO-DO
+//Turn into template based system linked to SQL
 $panels = 4;
+$panelNames = ['Location 1','Location 2','Location 3', 'Location 4'];
+$panelHosts = [2,3,1,4];
+$panelStatus = [91,92,100,99];
 
 ?>
 
 <!Doctype <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     
@@ -30,7 +36,7 @@ $panels = 4;
 <body>
     <header>
         <div class="logoContainer">
-            <h1 class="logo">V<span class="logoI">i</span>SUM IO</h1>
+            <h1 class="logo">V<span class="logoI">i</span>SUM IO - Demo Mode</h1>
         </div>
         <nav>   
             <a class="fas fa-bars"></a>
@@ -46,7 +52,17 @@ $panels = 4;
         <?php
             for ($i = 0; $i<$panels; $i++)
             {
-                echo ("<div class='panel'><div class='panelContent'></div></div>");
+        ?>
+                    <div class="panel">
+                        <div class="panelContent">
+                            <h2 class=""><?php echo($panelNames[$i]);?>
+        <?php
+
+
+        ?>
+                        </div>
+                    </div>
+        <?php
             }
         ?>
 

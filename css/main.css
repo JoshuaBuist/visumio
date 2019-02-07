@@ -32,6 +32,7 @@ div.logoContainer {
 
 div.logoContainer > h1 {
     font-size: 48px;
+    line-height: 75px;
     color: #fff;
 }
 
@@ -93,6 +94,7 @@ div.panelContent:hover {
     div.logoContainer > h1 {
         font-size: 2em;
         color: #fff;
+        line-height: 75px;
     }
 }
 
@@ -106,6 +108,7 @@ div.panelContent:hover {
     div.logoContainer > h1 {
         font-size: 2em;
         color: #fff;
+        line-height: 75px;
     }
 
      /* Panels */

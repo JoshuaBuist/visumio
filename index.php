@@ -11,13 +11,14 @@ $cssVersion = date("Y-m-d-H-i-s");
 //TO-DO
 //Turn into template based system linked to SQL
 $panels = 4;
-$panelNames = ['Location 1','Location 2','Location 3', 'Location 4'];
+$panelNames = ['Server 1','Server 2','Server 3', 'Server 4'];
 $panelHosts = [2,3,1,4];
+$panelClients = [1,1,1,1];
 $panelStatus = [91,92,100,99];
 
 ?>
 
-<!Doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -36,7 +37,7 @@ $panelStatus = [91,92,100,99];
 <body>
     <header>
         <div class="logoContainer">
-            <h1 class="logo">V<span class="logoI">&nbsp;i&nbsp;</span>SUM IO - Demo</h1>
+            <h1 class="logo">V<span class="logoI">&nbsp;i&nbsp;</span>SUM - Demo</h1>
         </div>
         <nav>   
             <a class="fas fa-bars"></a>

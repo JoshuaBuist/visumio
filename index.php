@@ -15,7 +15,7 @@ $panels = 4;
 <head>
     <meta charset="utf-8" />
     
-    <title>LUNA ViSUM</title>
+    <title>ViSUM IO</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -43,7 +43,7 @@ $panels = 4;
 
 
         <?php
-            for ($i = 0; $i<5; $i++)
+            for ($i = 0; $i<$panels; $i++)
             {
                 echo ("<div class='panel'><div class='panelContent'></div></div>");
             }

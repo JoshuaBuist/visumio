@@ -66,12 +66,12 @@ $panelStatus = [91,92,100,99];
         <?php
             }
         ?>
-
+            <div class="vSpace"></div>
         </div>
     </main>
 
     <footer>
-            <h3>Visum IO Monitoring Platform (c) 2019 - All Rights Reserved</h3>
+            <h5>Visum IO Monitoring Platform (c) 2019 - All Rights Reserved</h5>
     </footer>
 </body>
 </html>

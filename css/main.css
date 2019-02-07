@@ -19,6 +19,7 @@ a.fas {
 
 header {
     position: fixed;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -77,8 +78,6 @@ div.panelContent {
 div.panelContent:hover {
     background-color: rgba(35,35,35,0.8);
 }
-
-
 
 /* TO-DO 
 - Make app responsive

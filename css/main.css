@@ -4,6 +4,13 @@ Luna Visum Monitoring Platform (c) 2019 - All Rights Reserved
 Licensed to iUNU Inc. 2019
 */
 
+/* Utils */
+.vSpace {
+    height: 85px;
+}
+
+/* Main Definitions */
+
 h1 {
     font-family: 'Saira';
     font-weight: 200;
@@ -18,9 +25,6 @@ a.fas {
     font-size: 38px;
     line-height: 75px;
 }
-
-
-/* Element Definitions */
 
 header {
     position: fixed;
@@ -40,6 +44,11 @@ div.logoContainer > h1 {
     color: #fff;
 }
 
+.logoI {
+    background-color: #FFF;
+    color: #00B4DB;
+}
+
 header > nav {
     width: 75px;
     height: 75px;
@@ -49,12 +58,6 @@ header > nav {
 main {
     width: 100%;
     min-height: 100vh;
-}
-
-/* Classes */
-
-.vSpace {
-    height: 85px;
 }
 
 div.container {

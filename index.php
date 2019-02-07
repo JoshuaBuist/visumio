@@ -29,7 +29,7 @@ $panels = 4;
 <body>
     <header>
         <div class="logoContainer">
-            <h1 class="logo">LUNA ViSUM</h1>
+            <h1 class="logo">ViSUM IO</h1>
         </div>
         <nav>   
             <a class="fas fa-bars"></a>

@@ -36,7 +36,7 @@ $panelStatus = [91,92,100,99];
 <body>
     <header>
         <div class="logoContainer">
-            <h1 class="logo">V<span class="logoI">i</span>SUM IO - Demo Mode</h1>
+            <h1 class="logo">V<span class="logoI">&nbsp;i&nbsp;</span>SUM IO - Demo</h1>
         </div>
         <nav>   
             <a class="fas fa-bars"></a>

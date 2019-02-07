@@ -8,8 +8,6 @@ Visum IO Monitoring Platform (c) 2019 - All Rights Reserved
 
 $panels = 4;
 
-echo "Hello World";
-
 ?>
 
 <!Doctype <!DOCTYPE html>
@@ -45,12 +43,11 @@ echo "Hello World";
 
 
         <?php
-         $array = array( 1, 2, 3, 4, 5);
-         
-         foreach( $array as $value ) {
-            echo "Value is $value <br />";
-         }
-      ?>
+            for ($i = 0; $i<5; $i++)
+            {
+                echo ("<div class='panel'><div class='panelContent'></div></div>")
+            }
+        ?>
 
         </div>
     </main>

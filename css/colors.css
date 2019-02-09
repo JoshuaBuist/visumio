@@ -34,6 +34,10 @@ main {
 }
 
 [data-button="button-1"] {
+    background: #0083B0;
+}
+
+[data-button="button-1"]:hover {
     background: #00B4DB;
 }
 

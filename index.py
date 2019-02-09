@@ -9,7 +9,10 @@ class Template:
 
     def render(self):
         
-        page = "".join(open(self.url,'r').readlines())
+        self.content = "".join(open(self.url,'r').readlines())
+        self.content = self.content.format(**self.handles)
+        
+        print(self.content)
 
 
 def load_page(url):
@@ -35,7 +38,7 @@ def main():
     page = load_page("templates/app.html")
     render_page(page)
 
-    main_page = Template('templates/app.html',[('value','Demo'),('value2','Hello World')])
+    main_page = Template('templates/app.html',{'value':'Demo','value2':'Hello World'})
 
 
 if __name__ == "__main__":

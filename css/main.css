@@ -48,7 +48,7 @@ main {
     min-height: 100vh;
 }
 
-form[type="text"],form[type="password"] {
+input[type="text"],form[type="password"] {
     border: 1px #fff;
     background: none;
     widows: 50%;
@@ -57,7 +57,7 @@ form[type="text"],form[type="password"] {
     line-height: 25px;
 }
 
-form[type="submit"] {
+input[type="submit"] {
     min-width: 100px;
     height: 50px;
 }

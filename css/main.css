@@ -62,6 +62,11 @@ div.panel {
     margin: 0.5px;
 }
 
+div.panel2 {
+    width: 50%;
+    padding: 15px;
+}
+
 div.panelContent {
     position: relative;
     width: 100%;

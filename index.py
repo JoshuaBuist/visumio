@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import cgi
 import cgitb
@@ -44,17 +44,16 @@ def main():
 
     form = cgi.FieldStorage() # Data stored from POST
 
-    if "user" not in form:
-        print("<h1>Not Logged In</h1")
-        return
-
     # Initializes CGI page
     main_page = Page("Main").init()
    
-    # Ensures page can be written to before template is loaded
     if main_page:
-        main_content = Template('templates/app.html',{'value':form['user'].value,'value2':'Hello World'})
-        main_content.render()
+        if "user" not in form:
+            login_content = Template('templates/login.html',{})
+            login_content.render()
+        else:
+            main_content = Template('templates/app.html',{'value':form['user'].value,'value2':'Hello World'})
+            main_content.render()
 
 
 if __name__ == "__main__":

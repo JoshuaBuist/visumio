@@ -11,10 +11,10 @@ def load_page(url):
     #if len(__handles) > 0:
         # Added handles
 
-    print (page)
+    print page
 
 def main():
-    print ('Content-type: text/html\n\n')
+    print 'Content-type: text/html\n\n'
     load_page("templates/app.html")
 
 if __name__ == "__main__":

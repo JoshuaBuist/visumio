@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
-def load_page(url,__handles = []):
+from string import Template
+
+def load_page(url):
 
     page = "".join(open(url,'r').readlines())
 
-    page.format(VALUE="Hello World")
-    
+    Template(page).substitute(value="Hello World")
+
     #if len(__handles) > 0:
         # Added handles
 

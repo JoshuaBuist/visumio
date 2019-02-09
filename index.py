@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+import cgi
+import cgitb
+
 class Page:
 
     def __init__(self,_name):
@@ -36,17 +39,23 @@ class Template:
 # Main function
 #
 def main():
-    
+
+    cgitb.enable() # Debug Setting
+
+    form = cgi.FieldStorage() # Data stored from POST
+
+    if "user" not in form:
+        print("<h1>Not Logged In</h1")
+        return
+
     # Initializes CGI page
     main_page = Page("Main").init()
    
     # Ensures page can be written to before template is loaded
     if main_page:
-        main_content = Template('templates/app.html',{'value':'Debug','value2':'Hello World'})
+        main_content = Template('templates/app.html',{'value':form['user'].value,'value2':'Hello World'})
         main_content.render()
 
-        main_content.handles['value2'] = "Actually Goodbye"
-        main_content.render()
 
 if __name__ == "__main__":
-    main() 
+    main() # Starts main function

@@ -53,8 +53,8 @@ def main():
             msg = {'message':''}
 
             if "error" in form:
-                msg['message'] = 'Error Code: ' + str(form['error'].value + " Incorrect username or password")
-                
+                msg['message'] = 'Error Code ' + str(form['error'].value + ": Incorrect username or password")
+
             login_content = Template('templates/login.html',msg)
             login_content.render()
         else:

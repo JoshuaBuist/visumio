@@ -1,11 +1,29 @@
 #!/usr/bin/env python
 
+class Page:
+
+    def __init__(self,_name):
+        self.name = _name
+
+
+    def init(self):
+
+        # Tests if cgi can write to browser
+        #
+        try:
+            print('Content-type: text/html\n\n')
+            return True
+        except:
+            return False
+
+
 class Template:
 
-    def __init__(self,url,_handles):
+    def __init__(self,_url,_handles):
 
-        self.url = url
+        self.url = _url
         self.handles = _handles
+
 
     def render(self):
         
@@ -35,10 +53,15 @@ def render_page(content):
 #
 def main():
     
-    page = load_page("templates/app.html")
-    render_page(page)
+    #page = load_page("templates/app.html")
+    #render_page(page)
 
-    main_page = Template('templates/app.html',{'value':'Demo','value2':'Hello World'})
+    main_page = Page("Main").init()
+
+    if main_page:
+        main_content = Template('templates/app.html',{'value':'Demo','value2':'Hello World'})
+        main_content.render()
+
 
 
 if __name__ == "__main__":

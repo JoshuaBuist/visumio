@@ -1,12 +1,8 @@
 #!/usr/bin/env python
 
-from string import Template
-
 def load_page(url):
 
-    page = "".join(open(url,'r').readlines()).format(value="TEST")
-
-    Template(page).substitute(value="Hello World")
+    page = "".join(open(url,'r').readlines()).format(value="Demo")
 
     print (page)
 

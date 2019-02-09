@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+print ('Content-type: text/html\n\n')
+
 def load_page(url):
 
     page = "".join(open(url,'r').readlines())
@@ -7,7 +9,6 @@ def load_page(url):
     print (page)
 
 def main():
-    print ('Content-type: text/html\n\n')
     load_page("templates/app.html")
 
 if __name__ == "__main__":

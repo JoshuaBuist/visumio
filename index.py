@@ -9,12 +9,11 @@ class Page:
     def init(self):
 
         # Tests if cgi can write to browser
-        #
         try:
             print('Content-type: text/html\n\n')
             return True
         except:
-            return False
+            return False # Returns false if error occurs
 
 
 class Template:
@@ -27,39 +26,23 @@ class Template:
 
     def render(self):
         
-        self.content = "".join(open(self.url,'r').readlines())
+        # Renders page with preset template handles
+        self.content = "".join(open(self.url,'r').readlines()) # Removes trailing '\n'
         self.content = self.content.format(**self.handles)
         
         print(self.content)
 
 
-def load_page(url):
-
-    page = "".join(open(url,'r').readlines())
-
-    values = {'value':'Demo','value2':'Hello World'}
-
-    page = page.format(**values)
-
-    return page
-
-
-def render_page(content):
-
-    print ('Content-type: text/html\n\n' + content)
-
-
-# Main
+# Main function
 #
 def main():
     
-    #page = load_page("templates/app.html")
-    #render_page(page)
-
+    # Initializes CGI page
     main_page = Page("Main").init()
-
+   
+    # Ensures page can be written to before template is loaded
     if main_page:
-        main_content = Template('templates/app.html',{'value':'Demo','value2':'Hello World'})
+        main_content = Template('templates/app.html',{'value':'Debug','value2':'Hello World'})
         main_content.render()
 
 

@@ -12,7 +12,8 @@ class Template:
 
 def load_page(url):
 
-    page = str(open(url,'r').readlines())
+    page = "".join(open(url,'r').readlines())
+    page.format(value="DEMO")
 
     return page
 

@@ -48,17 +48,22 @@ main {
     min-height: 100vh;
 }
 
-input[type="text"],form[type="password"] {
+input {
+    margin: 10px;
+}
+
+input[type="text"],input[type="password"] {
     border: 1px #fff;
     background: none;
-    widows: 50%;
+    width: 50%;
     min-width: 100px;
-    height: 50px;
+    height: 35px;
     line-height: 25px;
 }
 
 input[type="submit"] {
-    min-width: 100px;
+    border: none;
+    width: 150px;
     height: 50px;
 }
 
@@ -79,6 +84,7 @@ div.panel {
 div.panel2 {
     width: 50%;
     height: 350px;
+    margin: auto;
     padding: 15px;
     background: #232526;
 }

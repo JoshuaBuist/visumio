@@ -19,4 +19,4 @@ print ('Content-Type: text/html')
 if len(user) > 0 and len(password) > 5:
     print ('Location: http://http://68.183.200.39/index.py')
 else:
-    print ('<h1>Wrong input</h1>')
+    print ('Location: http://http://68.183.200.39/index.py?er=1')

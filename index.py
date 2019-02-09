@@ -6,7 +6,7 @@ def load_page(url):
 
     page = "".join(open(url,'r').readlines())
 
-    page.format(value="Hello World")
+    Template(page).substitute(value="Hello World")
 
     print (page)
 

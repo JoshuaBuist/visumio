@@ -53,15 +53,16 @@ input {
 }
 
 input[type="text"],input[type="password"] {
-    border: 1px #fff;
-    background: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
     width: 50%;
     min-width: 100px;
-    height: 35px;
-    line-height: 25px;
+    height: 30px;
+    padding: 5px;
+    line-height: 20px;
 }
 
-input[type="submit"] {
+input[type="submit"],button {
     border: none;
     width: 150px;
     height: 50px;

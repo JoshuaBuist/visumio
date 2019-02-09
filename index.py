@@ -6,7 +6,7 @@ def load_page(url):
 
     page = "".join(open(url,'r').readlines())
 
-    Template(page).substitute(value="Hello World")
+    
 
     #if len(__handles) > 0:
         # Added handles

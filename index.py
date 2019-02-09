@@ -16,10 +16,9 @@ def load_page(url):
 
     page = "".join(open(url,'r').readlines())
 
-    values = [('value','Demo'),('value2','Hello World')]
+    values = {'value':'Demo','value2':'Hello World'}
 
-    for i in range(2):
-        page = page.format(values[i])
+    page = page.format(**values)
 
     return page
 

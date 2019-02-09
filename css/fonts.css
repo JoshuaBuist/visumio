@@ -10,7 +10,7 @@ font-family: 'IBM Plex Serif', serif;
 
 */
 
-h1,h2,h3,h4,h5,h6,a,i,b,p {
+h1,h2,h3,h4,h5,h6,a,i,b,p,label {
     font-family: 'Saira', sans-serif;
     color: #FFF;
     font-weight: 200;

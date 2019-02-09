@@ -14,7 +14,7 @@ form = cgi.FieldStorage() # Data stored from POST
 
 user = form.getvalue("user")
 password = form.getvalue("pass")
-authToken = uuid4()
+authToken = str(uuid4())
 
 print ('Content-Type: text/html\r')
 

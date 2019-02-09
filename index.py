@@ -46,7 +46,7 @@ def main():
         main_content.render()
 
         main_content.handles['value2'] = "Actually Goodbye"
-
+        main_content.render()
 
 if __name__ == "__main__":
     main() 

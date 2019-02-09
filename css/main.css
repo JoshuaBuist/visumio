@@ -78,7 +78,9 @@ div.panel {
 
 div.panel2 {
     width: 50%;
+    height: 350px;
     padding: 15px;
+    background: #232526;
 }
 
 div.panelContent {

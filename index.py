@@ -58,7 +58,7 @@ def main():
             login_content = Template('templates/login.html',msg)
             login_content.render()
         else:
-            main_content = Template('templates/app.html',{'value':form['user'].value,'value2':form['svpp'].value})
+            main_content = Template('templates/app.html',{'value':form['user'].value,'value2':form['auth'].value})
             main_content.render()
 
 

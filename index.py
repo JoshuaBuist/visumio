@@ -49,10 +49,16 @@ def main():
    
     if main_page:
         if "user" not in form:
-            login_content = Template('templates/login.html',{})
+
+            msg = {'message':''}
+
+            if "error" in form:
+                msg['message'] = 'Error Code: ' + str(form['error'].value + " Incorrect username or password")
+                
+            login_content = Template('templates/login.html',msg)
             login_content.render()
         else:
-            main_content = Template('templates/app.html',{'value':form['user'].value,'value2':'Hello World'})
+            main_content = Template('templates/app.html',{'value':form['user'].value,'value2':form['svpp'].value})
             main_content.render()
 
 

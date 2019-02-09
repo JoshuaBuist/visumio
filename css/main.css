@@ -71,6 +71,10 @@ input[type="submit"],button {
     transition: background 1s ease-out
 }
 
+.errorMsg {
+    background-color: #DB7093;
+}
+
 div.container {
     text-align: center;
     width: 100%;

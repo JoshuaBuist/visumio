@@ -4,7 +4,7 @@ from string import Template
 
 def load_page(url):
 
-    page = "".join(open(url,'r').readlines())
+    page = "".join(open(url,'r').readlines()).format(value="TEST")
 
     Template(page).substitute(value="Hello World")
 

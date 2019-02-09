@@ -45,6 +45,7 @@ def main():
         main_content = Template('templates/app.html',{'value':'Debug','value2':'Hello World'})
         main_content.render()
 
+        main_content.handles['value2'] = "Actually Goodbye"
 
 
 if __name__ == "__main__":
